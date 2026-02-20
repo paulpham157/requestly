@@ -17,7 +17,7 @@
     "@types/chrome": "^0.0.271",
     "raw-loader": "^4.0.2",
     "ts-loader": "^9.5.1",
-    "webpack": "^5.94.0",
+    "webpack": "^5.105.2",
     "webpack-cli": "^5.1.4"
   }
 }
