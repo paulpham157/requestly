@@ -36,8 +36,8 @@ Simulate a failed response on the first request and a successful one on subseque
       count++;
       $sharedState.count = count;
 
-      // Succeed if it is not the first request
-      if (count > 1) {
+      // Fail only the first request
+      if (count === 1) {
         return null;
       }
 

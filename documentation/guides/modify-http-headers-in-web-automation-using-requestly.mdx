@@ -81,8 +81,8 @@ In this guide, we’ll walk through how to integrate Requestly Interceptor into 
         const extensionPath = path.resolve(__dirname, 'requestly.crx'); // unpacked CRX folder
 
         // IF Using Our NPM Package @requestly/rq-automation
-        const { getExtension } = require("@requestly/rq-automation");
-        const extensionPath = getExtension("crx");
+        // const { getExtension } = require("@requestly/rq-automation");
+        // const extensionPath = getExtension("crx");
         // -----
 
         const options = new chrome.Options();
@@ -129,8 +129,8 @@ In this guide, we’ll walk through how to integrate Requestly Interceptor into 
         const extensionPath = require('path').resolve(__dirname, 'requestly'); // unpacked CRX folder
 
         // IF Using Our NPM Package @requestly/rq-automation
-        const { getExtension } = require("@requestly/rq-automation");
-        const extensionPath = getExtension("unpacked");
+        // const { getExtension } = require("@requestly/rq-automation");
+        // const extensionPath = getExtension("unpacked");
         // -----
 
         const userDataDir = './user-data';
@@ -181,8 +181,8 @@ In this guide, we’ll walk through how to integrate Requestly Interceptor into 
         const extensionPath = path.resolve(__dirname, 'requestly'); 
 
         // IF Using Our NPM Package @requestly/rq-automation
-        const { getExtension } = require("@requestly/rq-automation");
-        const extensionPath = getExtension("unpacked");
+        // const { getExtension } = require("@requestly/rq-automation");
+        // const extensionPath = getExtension("unpacked");
         // -----
 
         const browser = await puppeteer.launch({
@@ -257,7 +257,7 @@ In this guide, we’ll walk through how to integrate Requestly Interceptor into 
       <Tab title="With NPM Package">
         ```javascript
         // FOR SELENIUM ONLY
-        import { closeWelcomePage } = require("@requestly/rq-automation");
+        const { closeWelcomePage } = require("@requestly/rq-automation");
         await closeWelcomePage(driver);
         ```
       </Tab>

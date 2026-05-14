@@ -401,18 +401,6 @@
       "destination": "/public-apis/create-group"
     },
     {
-      "source": "/guides/:slug*",
-      "destination": "/guides/:slug*"
-    },
-    {
-      "source": "/public-apis/:slug*",
-      "destination": "/public-apis/:slug*"
-    },
-    {
-      "source": "/troubleshoot/:slug*",
-      "destination": "/troubleshoot/:slug*"
-    },
-    {
       "source": "/desktop-app/:slug*",
       "destination": "/interceptor/overview"
     }

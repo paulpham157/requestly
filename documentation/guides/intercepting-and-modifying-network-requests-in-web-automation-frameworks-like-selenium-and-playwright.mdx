@@ -115,8 +115,8 @@ If you only need simple header overrides (without API key), like adding or remov
         const extensionPath = path.resolve(__dirname, 'requestly.crx'); // unpacked CRX folder
 
         // IF Using Our NPM Package @requestly/rq-automation
-        const { getExtension } = require("@requestly/rq-automation");
-        const extensionPath = getExtension("crx");
+        // const { getExtension } = require("@requestly/rq-automation");
+        // const extensionPath = getExtension("crx");
         // -----
 
         const options = new chrome.Options();
@@ -163,8 +163,8 @@ If you only need simple header overrides (without API key), like adding or remov
         const extensionPath = require('path').resolve(__dirname, 'requestly'); // unpacked CRX folder
 
         // IF Using Our NPM Package @requestly/rq-automation
-        const { getExtension } = require("@requestly/rq-automation");
-        const extensionPath = getExtension("unpacked");
+        // const { getExtension } = require("@requestly/rq-automation");
+        // const extensionPath = getExtension("unpacked");
         // -----
 
         const userDataDir = './user-data';
@@ -215,8 +215,8 @@ If you only need simple header overrides (without API key), like adding or remov
         const extensionPath = path.resolve(__dirname, 'requestly'); 
 
         // IF Using Our NPM Package @requestly/rq-automation
-        const { getExtension } = require("@requestly/rq-automation");
-        const extensionPath = getExtension("unpacked");
+        // const { getExtension } = require("@requestly/rq-automation");
+        // const extensionPath = getExtension("unpacked");
         // -----
 
         const browser = await puppeteer.launch({
@@ -290,7 +290,7 @@ If you only need simple header overrides (without API key), like adding or remov
 
       <Tab title="With NPM Package">
         ```javascript
-        import { closeWelcomePage } = require("@requestly/rq-automation");
+        const { closeWelcomePage } = require("@requestly/rq-automation");
         await closeWelcomePage(driver);
         ```
       </Tab>
