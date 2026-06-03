@@ -1,16 +1,23 @@
 ---
-name: Feature request
-about: "Request a new feature \U0001F389"
-title: "[Feature]"
-labels: issue, type:feature
+name: Bug report
+about: Something isn't working as expected
+title: "[BUG]"
+labels: type:bug
 assignees: ''
-type: Feature
+type: Bug
 
 ---
 
 **Before submitting:** Search existing issues to confirm this isn't a duplicate.
 
 ---
+
+## Client
+<!-- Check one: -->
+- [ ] Desktop — macOS
+- [ ] Desktop — Windows
+- [ ] Desktop — Linux
+- [ ] CLI
 
 ## Protocol
 <!-- Check one: -->
@@ -20,7 +27,6 @@ type: Feature
 - [ ] Socket.IO
 - [ ] gRPC
 - [ ] MQTT
-- [ ] All protocols
 - [ ] Not protocol-specific
 
 ## Feature Area
@@ -36,21 +42,19 @@ type: Feature
 - [ ] Scripts
 - [ ] Other
 
-## Client
-<!-- Check one: -->
-- [ ] Desktop
-- [ ] CLI
-- [ ] All clients
-
-## What problem are you trying to solve?
-<!-- Describe your workflow and where it breaks down -->
+## App Version
+<!-- Found in the bottom-left footer of the app -->
 
 
-## Proposed Solution
+## Steps to Reproduce
+1.
+2.
+3.
 
+## Expected vs Actual Behavior
+**Expected:**
 
-## Alternatives Considered
-<!-- Any workarounds you've tried, or other approaches you thought of -->
+**Actual:**
 
 ## Additional Context
-<!-- Screenshots, mockups, links to similar features in other tools -->
+<!-- Screenshots, screen recordings, error messages -->
