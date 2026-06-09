@@ -1,8 +1,8 @@
-name: "🐛 Bug Report"
-description: "Something isn't working as expected"
-title: "[BUG] "
-labels: ["type:bug"]
-type: Bug
+name: "💡 Feature Request"
+description: "Request a new feature 🎉"
+title: "[Feature] "
+labels: ["type:feature"]
+type: Feature
 body:
   - type: markdown
     attributes:
@@ -10,17 +10,6 @@ body:
         **Before submitting:** Search [existing issues](https://github.com/requestly/requestly/issues) to confirm this isn't a duplicate.
 
         ---
-  - type: checkboxes
-    id: client
-    attributes:
-      label: Client
-      options:
-        - label: Desktop — macOS
-        - label: Desktop — Windows
-        - label: Desktop — Linux
-        - label: CLI
-    validations:
-      required: true
   - type: checkboxes
     id: protocol
     attributes:
@@ -32,9 +21,8 @@ body:
         - label: Socket.IO
         - label: gRPC
         - label: MQTT
+        - label: All protocols
         - label: Not protocol-specific
-    validations:
-      required: true
   - type: checkboxes
     id: feature_area
     attributes:
@@ -50,40 +38,34 @@ body:
         - label: Authentication
         - label: Scripts
         - label: Other
-    validations:
-      required: true
-  - type: input
-    id: version
+  - type: checkboxes
+    id: client
     attributes:
-      label: App Version
-      description: Found in the bottom-left footer of the app
-      placeholder: "e.g. v1.2.3"
+      label: Client
+      options:
+        - label: Desktop
+        - label: CLI
+        - label: All clients
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem are you trying to solve?
+      description: Describe your workflow and where it breaks down
     validations:
       required: true
   - type: textarea
-    id: steps
+    id: solution
     attributes:
-      label: Steps to Reproduce
-      placeholder: |
-        1.
-        2.
-        3.
+      label: Proposed Solution
     validations:
       required: true
   - type: textarea
-    id: expected
+    id: alternatives
     attributes:
-      label: Expected Behavior
-    validations:
-      required: true
-  - type: textarea
-    id: actual
-    attributes:
-      label: Actual Behavior
-    validations:
-      required: true
+      label: Alternatives Considered
+      description: Any workarounds you've tried, or other approaches you thought of
   - type: textarea
     id: context
     attributes:
       label: Additional Context
-      description: "Screenshots, screen recordings, error messages"
+      description: "Screenshots, mockups, links to similar features in other tools"
